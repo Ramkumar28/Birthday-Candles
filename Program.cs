@@ -46,5 +46,22 @@ namespace BirthdayCakeCandles
             }
             return default(int);
         }
+        
+        public static void StairCase(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                int j = n - i;
+                for (; j > 0; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int v = 0; v < i; v++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
